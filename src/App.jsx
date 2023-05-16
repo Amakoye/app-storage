@@ -1,6 +1,8 @@
 import { Button, Col, List, Row } from "antd";
 import { useEffect, useState } from "react";
 import AddItem from "./components/AddItem";
+import WrappedDynamicForm from "./components/DynamicForm";
+import WrappedDynamicFormPrac from "./components/DynamicFormPrac";
 
 const StyledRow = ({ children }) => {
   return (
@@ -105,6 +107,8 @@ function App() {
         padding: "2em",
       }}
     >
+      <WrappedDynamicFormPrac />
+      {/* 
       <StyledRow style={{ display: "flex", justifyContent: "center" }}>
         <Col xs={24} sm={24} lg={10}>
           <AddItem updateUIItems={setItems} />
@@ -129,7 +133,7 @@ function App() {
             )}
           />
         </Col>
-      </StyledRow>
+      </StyledRow> */}
     </div>
   );
 }

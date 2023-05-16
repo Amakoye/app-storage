@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import AddItem from "./components/AddItem";
 import WrappedDynamicForm from "./components/DynamicForm";
 import WrappedDynamicFormPrac from "./components/DynamicFormPrac";
+import LineChartGraph from "./components/charts/LineChart";
+import PieChartGraph from "./components/charts/PieChart";
+import RenderCharts from "./components/charts/RenderCharts";
 
 const StyledRow = ({ children }) => {
   return (
@@ -107,7 +110,9 @@ function App() {
         padding: "2em",
       }}
     >
-      <WrappedDynamicFormPrac />
+      <RenderCharts />
+
+      {/* <WrappedDynamicFormPrac /> */}
       {/* 
       <StyledRow style={{ display: "flex", justifyContent: "center" }}>
         <Col xs={24} sm={24} lg={10}>
